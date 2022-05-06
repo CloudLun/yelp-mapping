@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NYC Restaurants Map</title>
+
+    <!-- JS Library -->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+
+   <!-- Mapbox -->
+    <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./scss/map.css">
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <div class="filter-container">
+        <div class="label-circle-container">
+            <span class="one"></span>
+            <p>Restaurants</p>
+        </div>
+        <div class="legend-label">
+            <h2>Price Low</h2>
+            <h2>High</h2>
+        </div>
+        <div class="price-circle-container">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+            <span class="four"></span>
+        </div>
+        <h2>Restaurant Price</h2>
+        <form name="" id="selectPrice">
+            <div class="radio-container">
+                <input type="radio" id="contactChoice" value="All" name="price" checked>
+                <label for="contactChoice">All</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="contactChoice" value="$" name="price">
+                <label for="contactChoiceOne">$</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="contactChoice" value="$$" name="price">
+                <label for="contactChoiceTwo">$$</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="contactChoice" value="$$$" name="price">
+                <label for="contactChoiceThree">$$$</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="contactChoice" value="$$$$" name="price">
+                <label for="contactChoiceFour">$$$$</label>
+            </div>
+        </form>
+        <h2>Restaurant Rating</h2>
+        <select name="" id="selectRating">
+            <option value="All" sele>All</option>
+        </select>
+        <h2>Subway Stations Buffer (0.3 miles)</h2>
+        <div class="buffer-button">
+            <span class="pic"></span>
+            <input type="radio" id="bufferChoice" value="bufferChoice" name="bufferChoice">
+            <label for="bufferChoice">show station buffer areas</label>
+        </div>
+    </div>
+    <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
+    <script src="./map.js"></script>
+</body>
+
+</html>

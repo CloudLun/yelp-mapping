@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.filter-container {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  padding: 30px 15px;
+  width: 300px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.filter-container .label-circle-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.filter-container .label-circle-container span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #ffd2aa;
+  border-radius: 50%;
+}
+
+.filter-container .label-circle-container p {
+  margin: 0;
+}
+
+.filter-container .legend-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filter-container h2 {
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.filter-container .price-circle-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filter-container .price-circle-container span {
+  display: block;
+  width: 25%;
+  height: 20px;
+}
+
+.filter-container .price-circle-container .one {
+  background-color: #ffd2aa;
+}
+
+.filter-container .price-circle-container .two {
+  background-color: #ffbf69;
+}
+
+.filter-container .price-circle-container .three {
+  background-color: #ff9843;
+}
+
+.filter-container .price-circle-container .four {
+  background-color: #e56903;
+}
+
+.filter-container #selectRating {
+  width: 40%;
+  height: 20px;
+}
+
+.filter-container #selectPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  font-size: 14px;
+}
+
+.filter-container #selectPrice .radio-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.filter-container .buffer-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.filter-container .buffer-button .pic {
+  display: block;
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+  background-color: #86bbd8;
+  border: 1px solid #86bbd8;
+  border-radius: 50%;
+  opacity: .7;
+}
+
+.filter-container .buffer-button label {
+  font-size: 13px;
+}
+/*# sourceMappingURL=map.css.map */
